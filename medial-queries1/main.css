@@ -1,3 +1,21 @@
 body {
   background: blanchedalmond;
 }
+* {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header, footer {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow 3;
+}
