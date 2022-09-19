@@ -4,6 +4,7 @@ body {
 
   * {
     border: 1px solid black;
+    box-sizing: border-box;
   }
   
   .container {
@@ -29,11 +30,11 @@ body {
     justify-content: space-between;
     }
   
-    .f {
-      min-width: 15%;
-      flex-grow: 1;
-      max-height: 10vh;
-      }
+  .f {
+    min-width: 15%;
+    flex-grow: 1;
+    max-height: 10vh;
+    }
   
   @media (min-width: 600px) {
     .container {
