@@ -1,3 +1,37 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.a {
+  width: 100%;
+}
+
+
+.b, .c, .d, .e, .f, .g {
+  flex-direction: column;
+  width: 25%;
+  height: 200px;
+  }
+
+  .h {
+    min-width: 15%;
+    flex-grow: 1;
+    max-height: 10vh;
+    }
+
+@media (min-width: 600px) {
+  .a, .h{
+    width: 100%;
+  }
+}

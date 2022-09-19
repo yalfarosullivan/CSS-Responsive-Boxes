@@ -30,7 +30,6 @@ body {
     }
   
     .f {
-      flex-basis: 15%;
       min-width: 15%;
       flex-grow: 1;
       max-height: 10vh;
