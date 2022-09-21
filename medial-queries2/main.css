@@ -14,35 +14,62 @@ body {
     justify-content: space-between;
   }
   
-  .a {
-    flex-grow: 1;
-  }
-  
-  .b {
-    flex-grow:3;
-    width: 80%;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 3;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
   }
 
-  .c, .d, .e{
-    flex-direction: row;
-    width: 25%;
-    max-height: 20vh;
-    justify-content: space-between;
-    }
-  
-  .f {
-    min-width: 15%;
+  header, footer, aside, .wrapper {
     flex-grow: 1;
+    margin: .5em;
     max-height: 10vh;
-    }
-  
+  }
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 20vh;
+  }
+
+  aside > div {
+    flex-grow: 3;
+    margin: .5em;
+   }
+
+   main {
+    width: 90%;
+    flex-grow: 3;
+    margin: .5;
+   }
+
+
   @media (min-width: 600px) {
     .container {
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .a, .f {
+    header {
       width: 100%;
+      height: 10vh;
+    }
+
+    footer {
+      min-height: 80vh;
+      margin: .5em;
+      flex-grow: 3;
+    }
+
+    .wrapper {
+      justify-content: stretch;
+      flex-basis: 70%;
+      min-height: 80vh;
+
     }
   }
 
